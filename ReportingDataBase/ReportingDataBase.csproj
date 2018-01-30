@@ -133,6 +133,7 @@
     <Compile Include="Models\ReportingSkills.cs" />
     <Compile Include="Models\Skill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Get.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
