@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ReportingDataBase.Models
 {
-    public class Skill
+    public class Skill:IEntity
     {
         public int ID { get; set; }
         public string SkillName { get; set; }
