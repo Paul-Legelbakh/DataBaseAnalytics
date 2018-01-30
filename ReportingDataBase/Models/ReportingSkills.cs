@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ReportingDataBase.Models
 {
-    public class ReportingSkills
+    public class ReportingSkills:IEntity
     {
         public int ID { get; set; }
         public DateTime? ReportingDate { get; set; }

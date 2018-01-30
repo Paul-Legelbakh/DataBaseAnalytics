@@ -8,9 +8,9 @@ namespace ReportingDataBase.DAL
 {
     public class SkillRepository : GenericRepository<DatabaseContext, Skill>
     {
-        public ReportingRepository()
+        public SkillRepository()
         {
-            context = new DataContext();
+            context = new DatabaseContext();
         }
     }
 }
