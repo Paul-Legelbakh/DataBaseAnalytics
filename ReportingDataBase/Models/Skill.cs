@@ -9,5 +9,7 @@ namespace ReportingDataBase.Models
     {
         public int ID { get; set; }
         public string SkillName { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
