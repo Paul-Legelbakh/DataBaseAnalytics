@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReportingDataBase.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -18,11 +19,16 @@ namespace DataBaseAnalytics
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+
+
             //Start timer with start project
             Thread thread = new Thread(new ThreadStart(Time));
             thread.IsBackground = true;
             thread.Name = "Time";
             thread.Start();
+            SkillRepository repo = new SkillRepository();
+            repo.copySkills();
+
         }
 
         //Work of timer every day
